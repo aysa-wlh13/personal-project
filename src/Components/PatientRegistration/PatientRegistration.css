@@ -1,0 +1,94 @@
+.patient-registration-behind {
+    height: 90vh;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+}
+
+.patient-registration-container{
+    height: 70vh;
+    width: 30vw;
+    border: 1px solid black;
+    display: flex;
+	justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+    font-family: 'PT Serif', serif;
+}
+
+.patient-registration-small-container{
+    height: 50vh;
+    border: 3px solid black;
+}
+
+.patient-username-input {
+ 
+    width: 20vw;    
+    border: 1px solid red;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: stretch;
+}
+
+.patient-password-input {
+
+    width: 20vw;
+    border: 1px solid blue;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: stretch;
+}
+
+.first-name-input {
+    width: 20vw;
+    border: 1px solid orange;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: stretch;
+}
+
+.last-name-input {
+    width: 20vw;
+    border: 1px solid purple;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: stretch;
+}
+
+.doctor-input{
+    width: 20vw;
+    border: 1px solid brown;
+
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+	align-items: baseline;
+	align-content: stretch;
+}
+
+.register-button-container{
+    width: 20vw;
+    border: 1px solid goldenrod;
+}

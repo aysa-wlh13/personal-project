@@ -1,0 +1,51 @@
+.doctor-registration-behind {
+    height: 90vh;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: center;
+	align-items: center;
+    align-content: stretch;
+}
+
+.doctor-registration-container{
+    height: 70vh;
+    width: 30vw;
+    border: 1px solid black;
+    display: flex;
+	justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'PT Serif', serif;
+    font-size: 20px;
+}
+
+.dr-username-input{
+    height: 100px;
+    width: 20vw;
+    border: 1px solid red;
+}
+
+.dr-password-input {
+    height: 100px;
+    width: 20vw;
+    border: 1px solid blue;
+}
+
+.dr-firstName-input{
+    height: 100px;
+    width: 20vw;
+    border: 1px solid magenta;
+}
+
+.dr-lastName-input {
+    height: 100px;
+    width: 20vw;
+    border: 1px solid darkblue;
+}
+
+.dr-register-button-container{
+    height: 100px;
+    width: 20vw;
+    border: 1px solid goldenrod;
+}
