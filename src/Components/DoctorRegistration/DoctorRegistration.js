@@ -3,11 +3,9 @@ import axios from 'axios';
 import {Link} from 'react-router-dom';
 import './DoctorRegistration.css';
 
-
-
 //redux
-// import {updateUser} from '../redux/reducer';
-// import {connect} from 'react-redux';
+import {updateUser} from '../../redux/reducer';
+import {connect} from 'react-redux';
 
 
 
@@ -32,20 +30,20 @@ class DoctorRegistration extends Component {
 
     handleDoctorRegistration = () => {
         axios.post('/auth/doctorRegister', {username: this.state.username, password: this.state.password, firstName:this.state.firstName, lastName:this.state.lastName}).then(res => {
-            this.state = {
+            this.setState ({
                 username: '',
                 password: '',
                 firstName: '',
                 lastName: ''
-            }
+            })
             //redux
-            // this.props.updateUser(res.data)
+            this.props.updateUser(res.data)
             this.props.history.push('/patients')
 
         })
         .catch(err => console.log(err))
     }
-
+//component did mount axios reqest
 
     render(){
         return(
@@ -101,4 +99,4 @@ class DoctorRegistration extends Component {
 
 //redux
 
-export default DoctorRegistration;
+export default connect(null, {updateUser})(DoctorRegistration);

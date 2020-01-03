@@ -45,6 +45,7 @@ app.post('/auth/user', authCtrl.getUser);
 //trackerController
 //get
 app.get('/api/allTracker/:id', trackCtrl.getTracker);
+
 //post
 
 

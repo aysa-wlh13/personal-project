@@ -4,8 +4,8 @@ import {Link} from 'react-router-dom';
 import './Landing.css';
 
 //redux
-// import {connect} from 'react-redux';
-// import {updateUser} from '../redux/reducer';
+import {connect} from 'react-redux';
+import {updateUser} from '../../redux/reducer';
 
 
 class Landing extends Component {
@@ -21,12 +21,13 @@ class Landing extends Component {
 
     handleLogin = () => {
         axios.post('/auth/login', {username: this.state.username, password: this.state.password}).then(res => {
-            this.state = {
+            this.setState ({
                 username: '',
                 password: ''
-            }
+            })
             //redux
-            // this.props.updateUser(res.data)
+            this.props.updateUser(res.data)
+
             this.props.history.push('/dashboard/tracker')
      
         })
@@ -40,6 +41,7 @@ class Landing extends Component {
     }
 
     render(){
+        console.log(this.props)
         return(
             <article className='behind-login'>
 
@@ -101,4 +103,4 @@ class Landing extends Component {
 
 //redux
 
-export default Landing;
+export default connect(null, {updateUser})(Landing);
