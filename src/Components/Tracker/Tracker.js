@@ -3,6 +3,19 @@ import Header from '../Header/Header';
 import {connect} from 'react-redux';
 
 class Tracker extends Component {
+    constructor(){
+        super();
+
+        this.state = {
+            blood_sugar: '',
+            food: '',
+            carbs: '',
+            insulin_units: '',
+            time: '',
+            date: ''
+
+        }
+    }
 
     render(){
     console.log(this.props)
@@ -30,6 +43,9 @@ class Tracker extends Component {
 
                 <p>date</p>
                 <input/>
+
+                {/* track */}
+
               
             </div>
         )

@@ -1,4 +1,15 @@
 .top {
     height: 8vh;
-    background-color: gray;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.979);
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+    display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    margin-left: -15px;
 }
