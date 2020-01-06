@@ -44,13 +44,16 @@ app.post('/auth/user', authCtrl.getUser);
 
 //trackerController
 //get
-app.get('/api/allTracker/:id', trackCtrl.getTracker);
+
+
+//get
+app.get('/api/getTracker/:track_id', trackCtrl.getTracker);
 
 //post
-
+app.post('/api/addTracker', trackCtrl.addTracker)
 
 //put
-
+app.put('/api/editTracker/:track_id', trackCtrl.editTracker)
     
 //delete
 

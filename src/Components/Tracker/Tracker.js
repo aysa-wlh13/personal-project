@@ -10,6 +10,27 @@ class Tracker extends Component {
             <div>
                 <Header />
                 Tracker
+                <br/>
+                {/* add */}
+                ADD
+                <p>bg</p>
+                <input/>
+
+                <p>food</p>
+                <input/>
+
+                <p>g</p>
+                <input/>
+
+                <p>insulin units</p>
+                <input/>
+
+                <p>time</p>
+                <input/>
+
+                <p>date</p>
+                <input/>
+              
             </div>
         )
     }
