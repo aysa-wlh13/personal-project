@@ -28,7 +28,7 @@ class Landing extends Component {
             //redux
             this.props.updateUser(res.data)
 
-            if(this.props.user.is_admin === true){
+            if(this.props.reducer.user.is_admin === true){
                 this.props.history.push('/patients')
             }else{
                 this.props.history.push('/dashboard/tracker')
@@ -45,6 +45,7 @@ class Landing extends Component {
     }
 
     render(){
+        // console.log(this.props)
         return(
             <article className='behind-login'>
 

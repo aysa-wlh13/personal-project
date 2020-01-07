@@ -46,7 +46,7 @@ module.exports = {
         const db = req.app.get('db')
 
         const {track_id} = req.params
-
+console.log(track_id)
         db.delete_track
         (track_id)
         .then(data => res.status(200).send(data))

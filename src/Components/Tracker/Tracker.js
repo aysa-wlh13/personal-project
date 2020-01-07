@@ -2,6 +2,7 @@ import React, {Component} from 'react';
 import Header from '../Header/Header';
 import {connect} from 'react-redux';
 import axios from 'axios';
+import {setTracks} from '../../redux/reducer2';
 
 import './Tracker.css';
 import add from './add.png';
@@ -38,9 +39,7 @@ class Tracker extends Component {
     //get
     getTracker = () => {
         axios.get('/api/getTracker').then(res => {
-            this.setState({
-                tracks: res.data
-            })
+            this.props.setTracks(res.data)
         })
     }
 
@@ -53,14 +52,21 @@ class Tracker extends Component {
     }
 
     //update
-
+    editTracker = () => {
+        
+    }
 
     //delete
-    
+    deleteTracker = (id) => {
+        axios.delete(`/api/deleteTracker/${id}`).then(res => {
+            this.getTracker()
+        })
+    }
+
 
     render(){
-        console.log(this.state.tracks)
-    let tracks = this.state.tracks.map((el, i) => (
+        console.log(this.props)
+        let tracks = this.props.reducer2.tracks.map((el, i) => (
         <div key = {i} className='tracks'>
             <h3>{el.blood_sugar} bg</h3>
             <h3>{el.food_name}</h3>
@@ -68,6 +74,20 @@ class Tracker extends Component {
             <h3>{el.insulin_units} units</h3>
             <h3>{el.time}</h3>
             <h3>{el.date}</h3>
+
+            <button>
+                <img
+                    src={edit2} 
+                    alt='edit' 
+                    height='30'/>
+                    </button>
+
+            <button onClick={() => this.deleteTracker(el.track_id)}>
+                <img
+                    src={trashcan2} 
+                    alt='trashcan' 
+                    height='35'/>
+            </button>
         </div>
     ))
         return(
@@ -112,21 +132,13 @@ class Tracker extends Component {
                 {/* track */}
                 <article className='tracks-box'>
                     {tracks}
-                    <button>
-                        <img
-                        src={edit2} 
-                        alt='edit' 
-                        height='30'/>
-                    </button>
 
-                    <button>
-                        <img
-                        src={trashcan2} 
-                        alt='trashcan' 
-                        height='35'/>
-                    </button>
                 </article>
 
+                {/* edit */}
+                <section className='edit-style'>
+
+                </section>
               
             </div>
         )
@@ -137,4 +149,4 @@ const mapStateToProps = reduxState => {
     return reduxState
 }
 
-export default connect(mapStateToProps)(Tracker);
+export default connect(mapStateToProps, {setTracks})(Tracker);
