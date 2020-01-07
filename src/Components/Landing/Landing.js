@@ -28,7 +28,11 @@ class Landing extends Component {
             //redux
             this.props.updateUser(res.data)
 
-            this.props.history.push('/dashboard/tracker')
+            if(this.props.user.is_admin === true){
+                this.props.history.push('/patients')
+            }else{
+                this.props.history.push('/dashboard/tracker')
+            }
      
         })
         .catch(err => console.log(err))
@@ -41,7 +45,6 @@ class Landing extends Component {
     }
 
     render(){
-        console.log(this.props)
         return(
             <article className='behind-login'>
 
@@ -102,5 +105,6 @@ class Landing extends Component {
 }
 
 //redux
+const mapStateToProps = reduxState => reduxState
 
-export default connect(null, {updateUser})(Landing);
+export default connect(mapStateToProps, {updateUser})(Landing);

@@ -47,7 +47,7 @@ app.post('/auth/user', authCtrl.getUser);
 
 
 //get
-app.get('/api/getTracker/:track_id', trackCtrl.getTracker);
+app.get('/api/getTracker', trackCtrl.getTracker);
 
 //post
 app.post('/api/addTracker', trackCtrl.addTracker)
@@ -56,7 +56,7 @@ app.post('/api/addTracker', trackCtrl.addTracker)
 app.put('/api/editTracker/:track_id', trackCtrl.editTracker)
     
 //delete
-
+app.delete('/api/deleteTracker/:track_id',trackCtrl.deleteTracker);
 
 //chatRoomController
 

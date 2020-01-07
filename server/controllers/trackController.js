@@ -2,13 +2,10 @@ module.exports = {
     //get
     getTracker: async(req, res) => {
         console.log(req.session.user)
-        console.log(req.params)
-
-        const {track_id} = req.params
 
         const db = req.app.get ('db')
 
-        const userTracker = await db.get_all_tracker([track_id, req.session.user.users_id])
+        const userTracker = await db.get_all_tracker([req.session.user.users_id])
 
         res.status(200).send(userTracker);
     },
@@ -45,14 +42,17 @@ module.exports = {
     },  
 
     //delete
-    deleteTracker: async(req, res) => {
-        // const db = req.app.get('db');
+    deleteTracker: (req, res) => {
+        const db = req.app.get('db')
 
-        // const {users_id} = req.session;
-        // const {track_id} = 
+        const {track_id} = req.params
 
-        
+        db.delete_track
+        (track_id)
+        .then(data => res.status(200).send(data))
+        .catch(err => {
+            res.sendStatus(500)
+            console.log(err)
+        })
     }
-
-
 };

@@ -8,20 +8,34 @@ class Header extends Component {
     render(){
         return(
             <div className='top'>
-                Header
                 <img
                     className='logo'
                     src={newLogoSmall} 
                     alt='logo' 
                     height='50'/>
 
-                <Link to='/dashboard/tracker'><button>Tracker</button></Link>
+            <article className='move-buttons'>
 
-                <Link to='/dashboard/ChatRoom'><button>Chat Room</button></Link>
+                <Link to='/dashboard/tracker'>
+                    <button className='move-buttons-style'>
+                    Tracker
+                    </button>
+                </Link>
 
-                <button>Find your food</button>
+                <Link to='/dashboard/ChatRoom'>
+                    <button className='move-buttons-style'>
+                        Chat Room
+                    </button>
+                </Link>
 
-                <Link to='/login'><button>Logout</button></Link>
+                <button className='move-buttons-style'>Find your food</button>
+
+                <Link to='/login'>
+                    <button className='move-buttons-style'>
+                        Logout
+                    </button>
+                </Link>
+            </article>
             </div>
         )
     }
