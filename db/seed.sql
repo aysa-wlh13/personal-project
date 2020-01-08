@@ -18,6 +18,25 @@ values
 -- select *
 -- from users
 
+--doctor
+create table doctor (
+    doctor_id serial primary key,
+    is_admin boolean default true,
+    username varchar(250) unique,
+    password varchar(250),
+    firstName varchar(250),
+    lastName varchar(250)
+)
+
+insert into doctor
+(username, password, firstName, lastName)
+values
+('tim@t', 'tttt', 'Tim', 'hanson')
+
+-- select * 
+-- from doctor
+
+
 --track
 create table track (
     track_id serial primary key,

@@ -50,6 +50,8 @@ app.get('/api/getTracker', trackCtrl.getTracker);
 //post
 app.post('/api/addTracker', trackCtrl.addTracker)
 
+
+
 //put
 app.put('/api/editTracker/:track_id', trackCtrl.editTracker)
     
@@ -64,38 +66,16 @@ app.get(`/api/chats`, sockCtrl.getChats);
 //get
 app.get('/api/getChat/:users_id',sockCtrl.getChat)
 
-//////////////////////////////////////////////////////
-//Sockets
-io.on("connection", function(socket) {
-    socket.on("endChat", function(room) {
-      socket.leave(room);
-    });
-
-    socket.on("startChat", async function(room) {
-        const db = app.get("db");
-
-        const checkedRoom = await db.chats.check_room({ room });
-
-        !checkedRoom[0] && (await db.chats.create_room({ room }));
-
-        const messages = await db.chats.get_chats({ room });
-        socket.join(room);
-        io.to(room).emit("returnJoin", messages);
-
-      });
-
-      socket.on("sendMessage", async function(data) {
-        const db = app.get("db");
-        const { message, user_id, room } = data;
-        const messages = await db.chats.create_message({ message, user_id, room });
-        io.to(room).emit("returnMessages", messages);
-      });
-    });
-
-    
 
 //////////////////////////////////////////////////////
+
 const port = SERVER_PORT;
 const io = socket(
     app.listen(port, () => console.log(`${port} is Haunted!`))
 );
+
+//////////////////////////////////////////////////////
+//Sockets
+
+    
+
