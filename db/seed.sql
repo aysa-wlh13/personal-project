@@ -60,3 +60,24 @@ values
 -- select *
 -- from carb
 
+-- sockets
+
+-- rooms
+create table rooms (
+    room_id varchar primary key
+)
+
+
+--chats
+create table chats (
+    chat_id serial primary key,
+    message text,
+    users_id int, 
+    room_id varchar
+)
+
+
+
+
+
+
