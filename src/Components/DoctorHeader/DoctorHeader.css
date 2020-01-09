@@ -1,0 +1,29 @@
+.doctor-top {
+    height: 8vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.979);
+    position: fixed;
+    top: 0px;
+    z-index: 5;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+	align-content: stretch;
+}
+
+.logo {
+    margin-left: 50px;
+    /* border: 2px solid chartreuse; */
+}
+
+.doctor-move-buttons-style {
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+
+    margin-right: 40px;
+}

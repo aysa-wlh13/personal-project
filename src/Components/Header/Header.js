@@ -22,13 +22,13 @@ class Header extends Component {
                     </button>
                 </Link>
 
-                <Link to='/dashboard/ChatRoom'>
+                {/* <Link to='/dashboard/ChatRoom'>
                     <button className='move-buttons-style'>
                         Chat Room
                     </button>
-                </Link>
+                </Link> */}
 
-                <button className='move-buttons-style'>Find your food</button>
+                {/* <button className='move-buttons-style'>Find your food</button> */}
 
                 <Link to='/login'>
                     <button className='move-buttons-style'>

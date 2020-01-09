@@ -64,12 +64,6 @@ class Tracker extends Component {
       });
   };
 
-  
-
-
-
-
-
   render() {
     console.log(this.props);
     let tracks = this.props.reducer2.tracks.map((el, i) => (
@@ -81,10 +75,8 @@ class Tracker extends Component {
     return (
       <div>
         <Header />
-        Tracker
         <br />
         {/* add */}
-        ADD
         <section className="add-box">
           <p>blood sugar:</p>
           <input

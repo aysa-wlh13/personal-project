@@ -1,11 +1,11 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
 import newLogoSmall from './newLogoSmall.png'
-import './DoctorHeader.css'
+import './doctorTrackHeader.css'
 
 
 
-class DoctorHeader extends Component {
+class doctorTrackHeader extends Component {
 
     render(){
         return(
@@ -16,6 +16,11 @@ class DoctorHeader extends Component {
                     alt='logo' 
                     height='50'/>
 
+                <Link to='/patients'>
+                    <button className='doctor-move-buttons-style'>
+                        Back to Patients
+                    </button>
+                </Link>
 
 
                 <Link to='/login'>
@@ -28,4 +33,4 @@ class DoctorHeader extends Component {
     }
 }
 
-export default DoctorHeader;
+export default doctorTrackHeader;

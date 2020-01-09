@@ -1,0 +1,12 @@
+.doctor-tracks{
+    border: 3px solid rgb(5, 161, 141);
+    margin-top: 90px;
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: stretch;
+}
+

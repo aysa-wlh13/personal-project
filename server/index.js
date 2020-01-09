@@ -4,6 +4,7 @@ const session = require('express-session');
 const massive = require('massive');
 const authCtrl = require('./controllers/authController');
 const trackCtrl = require('./controllers/trackController');
+const pCtrl = require('./controllers/patientController');
 //sockets
 const socket = require("socket.io");
 const sockCtrl = require('./controllers/SocketsController');
@@ -28,6 +29,12 @@ app.use(session({
     }
 }))
 
+//////////////////////////////////////////////////
+
+const port = SERVER_PORT;
+const io = socket(
+    app.listen(port, () => console.log(`${port} is Haunted!`))
+);
 
 //////////////////////////////////////////////////////
 //Endpoints
@@ -50,13 +57,18 @@ app.get('/api/getTracker', trackCtrl.getTracker);
 //post
 app.post('/api/addTracker', trackCtrl.addTracker)
 
-
-
 //put
 app.put('/api/editTracker/:track_id', trackCtrl.editTracker)
     
 //delete
 app.delete('/api/deleteTracker/:track_id',trackCtrl.deleteTracker);
+
+//////////////////////////////////////////////////////
+//patientsTracker
+//get
+app.get('/api/getPatient', pCtrl.getPatient);
+
+app.get('/api/getPatientTracker/:users_id', pCtrl.getPatientTracker);
 
 //////////////////////////////////////////////////////
 //chatRoomController
@@ -66,13 +78,6 @@ app.get(`/api/chats`, sockCtrl.getChats);
 //get
 app.get('/api/getChat/:users_id',sockCtrl.getChat)
 
-
-//////////////////////////////////////////////////////
-
-const port = SERVER_PORT;
-const io = socket(
-    app.listen(port, () => console.log(`${port} is Haunted!`))
-);
 
 //////////////////////////////////////////////////////
 //Sockets

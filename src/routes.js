@@ -6,6 +6,7 @@ import PatientRegistration from './Components/PatientRegistration/PatientRegistr
 import Tracker from './Components/Tracker/Tracker';
 import ChatRoom from './Components/ChatRoom/ChatRoom';
 import Patients from './Components/Patients/Patients';
+import DoctorTracker from './Components/Patients/DoctorTracker';
 
 export default (
     <Switch>
@@ -14,6 +15,7 @@ export default (
         <Route path='/patient-registration' component={PatientRegistration}/>
         <Route path='/dashboard/tracker' component={Tracker}/>
         <Route path='/dashboard/ChatRoom' component={ChatRoom}/>
+        <Route path='/patients/:users_id' component={DoctorTracker}/>
         <Route path='/patients' component={Patients}/>
     </Switch>
 )

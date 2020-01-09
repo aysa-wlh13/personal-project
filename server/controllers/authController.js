@@ -52,22 +52,31 @@ module.exports = {
         const{session} = req;
 
         let user = await db.check_user(username);
+        let doctor = await db.check_doctor(username)
 
         user = user [0];
-        if(!user){
-            return req.status(400).send('User not found');
-        }else {
+        doctor = doctor [0];
+        if(!user && !doctor){
+            return res.status(400).send('User not found');
+        }else if(user) {
+      
             let foundUser = bcrypt.compareSync(password, user.password);
-
             if(foundUser){
                 delete user.password;
                 session.user = user;
                 console.log(session.user)
+                return res.status(202).send(session.user);}
+        } else if(doctor){
+            let foundUser = bcrypt.compareSync(password, doctor.password);
+            if(foundUser){
+                delete doctor.password;
+                session.user = doctor;
                 return res.status(202).send(session.user);
-            }else{
-                return res.status(400).send('Incorrect Password');
+        }else{
+            return res.status(400).send('Incorrect Password');
             }
         }
+    
     },
 
     logout: (req,res) => {
