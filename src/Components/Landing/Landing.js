@@ -54,50 +54,52 @@ class Landing extends Component {
                 </div> */}
 
                 <div className='login-container'>
-                    <h1>Login</h1>
-                    <section                                className='input-container'>
-                    <div className='username-input'>
+                    <article className='small-login-box'>
+                        <h1>Login</h1>
+                        <section                                className='input-container'>
+                        <div className='username-input'>
+                            <style>
+                                @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+                            </style>        
+
+                                <p>Username:</p>
+                                
+
+                            <input 
+                                // placeholder='Username'
+                                value={this.state.username}
+                                name='username'
+                                onChange={(e) => this.handleInput(e)}/>
+                        </div>        
+                    
+                    <div className='password-input'>
+
                         <style>
                             @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
                         </style>
 
-                            <p>Username:</p>
-                            
+                        <p>Password:</p>
 
                         <input 
-                            // placeholder='Username'
-                            value={this.state.username}
-                            name='username'
+                            // placeholder='Password'
+                            type='password'
+                            value={this.state.password}
+                            name='password'
                             onChange={(e) => this.handleInput(e)}/>
                     </div>        
-                
-                <div className='password-input'>
+            
+                        </section>
 
-                    <style>
-                        @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
-                    </style>
+                        <article className='login-register'>
+                        <style>
+                            @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
+                        </style>
 
-                    <p>Password:</p>
-
-                    <input 
-                        // placeholder='Password'
-                        type='password'
-                        value={this.state.password}
-                        name='password'
-                        onChange={(e) => this.handleInput(e)}/>
-                </div>        
-        
-                    </section>
-
-                    <article className='login-register'>
-                    <style>
-                        @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
-                    </style>
-
-                        <button onClick={this.handleLogin} className='login-register-button'>Login</button>
+                            <button onClick={this.handleLogin} className='login-register-button'>Login</button>
 
 
-                        <Link to='/patient-registration'><button className='login-register-button'>Register</button></Link>
+                            <Link to='/patient-registration'><button className='login-register-button'>Register</button></Link>
+                        </article>
                     </article>
                 </div>
             </article>

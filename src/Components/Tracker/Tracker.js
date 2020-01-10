@@ -73,38 +73,55 @@ class Tracker extends Component {
       getTracker = {this.getTracker}/>
     ));
     return (
-      <div>
+      <div className='behind'>
         <Header />
         <br />
         {/* add */}
         <section className="add-box">
-          <p>blood sugar:</p>
+        <div className='add-hold-box'>
+          <h3>blood sugar:</h3>
           <input
             onChange={e => this.handleInput("blood_sugar", e.target.value)}
           />
+        </div>
 
-          <p>food:</p>
+        <div className='add-hold-box'>
+          <h3>food:</h3>
           <input
             onChange={e => this.handleInput("food_name", e.target.value)}
           />
+        </div>
 
-          <p>carbs:</p>
+        <div className='add-hold-box'>
+          <h3>carbs:</h3>
           <input onChange={e => this.handleInput("carbs", e.target.value)} />
+          </div>
 
-          <p>insulin units:</p>
+          <div className='add-hold-box'>
+          <h3>insulin units:</h3>
           <input
             onChange={e => this.handleInput("insulin_units", e.target.value)}
           />
+          </div>
+      
 
-          <p>time:</p>
+        <div className='add-hold-box'>
+          <h3>time:</h3>
           <input onChange={e => this.handleInput("time", e.target.value)} />
+          </div>
 
-          <p>date:</p>
+          <div className='add-hold-box'>
+          <h3>date:</h3>
           <input onChange={e => this.handleInput("date", e.target.value)} />
+        </div>
 
-          <button onClick={this.addTracker}>
-            <img src={add} alt="add" height="35" />
+          <div className='add-but-hold-box'>
+          <button 
+          className='add-but'
+          onClick={this.addTracker}>
+            <img src={add} alt="add" height="40" />
           </button>
+          </div>
         </section>
         {/* track */}
         <article className="tracks-box">{tracks}</article>

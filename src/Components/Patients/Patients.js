@@ -1,9 +1,7 @@
 import React, {Component} from 'react';
 import DoctorHeader from '../DoctorHeader/DoctorHeader'
 import axios from "axios";
-import {Link} from 'react-router-dom'
-
-
+import './Patients.css';
 
 class Patients extends Component {
     constructor(){
@@ -28,12 +26,7 @@ class Patients extends Component {
         })
     }
 
-    //get
-    getPatientTracker = () => {
-        axios.get("").then(res => {
-        
-        });
-      };
+
 
     doctorView = (id) => {
         this.props.history.push(`/patients/${id}`)  
@@ -43,14 +36,18 @@ class Patients extends Component {
         console.log(this.state.patient)
         let patient = this.state.patient.map(
             (el,i) => (
-            <div>
-                <h1>{el.firstname}</h1>
-                <button onClick={() => this.doctorView(el.users_id)}>Tracker</button>
-            </div>
+            <section className='p-back'>
+                <div className='name-track-box'>
+                    <h1 className='name-box'>{el.firstname}</h1>
+
+                    <button className='track
+                    ' onClick={() => this.doctorView(el.users_id)}>Tracker</button>
+                </div>
+            </section>
         ))
 
         return(
-            <div>
+            <div className='patent-back'>
                 {/* <button>Chat Room</button> */}
                <DoctorHeader/>
                {patient}

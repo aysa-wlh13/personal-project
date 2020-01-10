@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import axios from "axios";
-import DoctorHeader from '../DoctorHeader/DoctorHeader'
-import { Link } from 'react-router-dom';
+import DoctorHeaderTracks from '../DoctorHeaderTracks/DoctorHeaderTracks'
 import './DoctorTracker.css';
 
 
@@ -34,20 +33,21 @@ class DoctorTracker extends Component {
         console.log(this.props)
         console.log(this.state.tracks)
         let tracks = this.state.tracks.map((el, i) => (
-            <div className="doctor-tracks">
-            <h3>{el.blood_sugar} bg</h3>
-            <h3>{el.food_name}</h3>
-            <h3>{el.carbs} grams</h3>
-            <h3>{el.insulin_units} units</h3>
-            <h3>{el.time}</h3>
-            <h3>{el.date}</h3>
-            </div>
+            <article className='doctor-track-behind'>
+                <div className="doctor-tracks">
+                <h3 className='doctor-track-box'>{el.blood_sugar} bg</h3>
+                <h3 className='doctor-track-box'>{el.food_name}</h3>
+                <h3 className='doctor-track-box'>{el.carbs} grams</h3>
+                <h3 className='doctor-track-box'>{el.insulin_units} units</h3>
+                <h3 className='doctor-track-box'>{el.time}</h3>
+                <h3 className='doctor-track-box'>{el.date}</h3> 
+                </div>
+            </article>
         ))
         return(
 
             <div>
-                <DoctorHeader/>
-
+                <DoctorHeaderTracks/>
                 {tracks}
 
             </div>

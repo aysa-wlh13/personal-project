@@ -1,0 +1,52 @@
+/* .p-back{
+    height: 100vh;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: space-around;
+    margin-top: px;
+    box-sizing: border-box;
+
+} */
+
+.patent-back{
+    /* height: 100vh; */
+    margin-top: 90px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+}
+
+
+.name-track-box{
+    width: 15vw;
+    margin-top: 15px;
+    border: 2px solid black;
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: space-around;
+    box-sizing: border-box;
+
+}
+
+.name-box {
+    /* border: 2px solid black; */
+}
+
+.track{
+    border: 2px solid green;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    color: black;
+}

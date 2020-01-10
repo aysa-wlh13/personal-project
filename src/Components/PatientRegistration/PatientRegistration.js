@@ -98,10 +98,12 @@ class PatientRegistration extends Component {
                     </section>
 
                     <article className='register-button-container'>
-                        <Link to='/doctor-registration'><button>Doctor Registration</button></Link>
-                        <button onClick={this.handlePatientRegister}>Register</button>
+                        <Link to='/doctor-registration'><button className='registerButtons'>Doctor Registration</button></Link>
+                        <button onClick={this.handlePatientRegister}
+                        className='registerButtons'>
+                            Register</button>
                         
-                        <Link to='/login'><button>Sign In</button></Link>
+                        <Link to='/login'><button className='registerButtons'>Sign In</button></Link>
                     </article>
                     </div> 
                 </section>     

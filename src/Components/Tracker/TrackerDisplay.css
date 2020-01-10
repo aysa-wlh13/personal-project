@@ -1,0 +1,85 @@
+.tracks{
+    border: 2px solid rgb(0, 0, 0);
+	margin-top: 35px;
+    width: 98vw;
+    height: 7.3vh;
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: stretch;
+    box-sizing: border-box;
+
+}
+
+.edit-tracks{
+    border: 2px solid rgb(0, 0, 0);
+	margin-top: 35px;
+    width: 98vw;
+    height: 7.3vh;
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    align-content: stretch;
+    box-sizing: border-box;
+}
+
+.hold-box {
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    height: 7.5vh;
+    width: 16vw;
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+}
+
+.but-hold-box{
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    height: 7.5vh;
+    width: 8vw;
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+}
+
+.cancel-buttons-style{
+    font-size: 20px;
+    font-weight: 600;
+    background-color: transparent;
+    border: none;
+    color: rgb(0, 0, 0);
+}
+.save-but{
+    border: none;
+    background-color: transparent;
+}
+
+.edit-hold-box{
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    height: 7.5vh;
+    width: 15vw;
+
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+	align-content: space-around;
+}
+

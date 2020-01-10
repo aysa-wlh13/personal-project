@@ -49,6 +49,7 @@ class DoctorRegistration extends Component {
         return(
             <div className='doctor-registration-behind'>
                 <section className='doctor-registration-container'>
+                    <article className='doctor-registration-small-container'>
                     DoctorRegistration
                     <div className='dr-username-input'>
                         <p>Username:</p>    
@@ -86,10 +87,12 @@ class DoctorRegistration extends Component {
                     </article>    
  
                     <div className='dr-register-button-container'>
-                        <button onClick={this.handleDoctorRegistration}>Register</button>
+                        <button onClick={this.handleDoctorRegistration}
+                        className='registerButtons'>Register</button>
 
-                        <Link to='/login'><button>Sign In</button></Link>
+                        <Link to='/login'><button className='registerButtons'>Sign In</button></Link>
                     </div>
+                </article>
 
                 </section>
             </div>
