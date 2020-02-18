@@ -83,6 +83,20 @@
 	align-content: space-around;
 }
 
+.edit-but-hold-box{
+    box-sizing: border-box;
+    border: 1px solid rgb(0, 0, 0);
+    height: 7.5vh;
+    width: 8vw;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: stretch;
+}
+
 /* iPad */
 @media(max-width: 768px){
     .tracks{
@@ -126,8 +140,8 @@
 
     .but-hold-box{
         box-sizing: border-box;
-        border: 1px solid white;
-        height: 10vh;
+        border: 1px solid rgb(0, 0, 0);
+        height: 7.5vh;
         width: 15vw;
     
         display: flex;
@@ -143,6 +157,20 @@
 		border: 1.5px solid rgb(77, 77, 77);
         width: 11vw;
         margin-left: 7px;
+    }
+
+    .edit-but-hold-box{
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        height: 10vh;
+        width: 14.5vw;
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
     }
 
 }
@@ -165,7 +193,7 @@
         box-sizing: border-box;
         border: 1px solid rgb(0, 0, 0);
         height: 9vh;
-        width: 7vw;
+        width: 7.3vw;
     
         display: flex;
         flex-direction: column;
@@ -192,7 +220,10 @@
         border: 2px solid rgb(0, 0, 0);
         margin-top: 35px;
         width: 97vw;
-        height: 10vh;
+        height: 11vh;
+
+        box-sizing: border-box;
+
 
         font-size: 15.5px;
     }
@@ -200,8 +231,11 @@
     .edit-hold-box{
         box-sizing: border-box;
         border: 1px solid rgb(0, 0, 0);
-        height: 10vh;
+        height: 11vh;
         width: 15vw;
+
+        font-size: 10px;
+        font-weight: 900;
     
         display: flex;
         flex-direction: column;
@@ -216,8 +250,8 @@
     .edit-input {
 		border: 1.5px solid rgb(77, 77, 77);
 
-        width: 11vw;
-        margin-left: 7px;
+        width: 10vw;
+        margin-left: 5px;
     }
 
     .check-but{
@@ -227,6 +261,20 @@
     .x-but{
         height: 27px;
 
+    }
+
+    .edit-but-hold-box{
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        height: 10.4vh;
+        width: 7.5vw;
+    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
     }
 
 }

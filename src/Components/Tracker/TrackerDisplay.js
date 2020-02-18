@@ -145,7 +145,7 @@ class TrackerDisplay extends Component {
               onChange={e => this.handleInput("date", e.target.value)} />
               </div>
 
-            <div className='but-hold-box'>
+            <div className='edit-but-hold-box'>
               <button
               className='save-but' 
               onClick={() => {
