@@ -153,13 +153,16 @@ class TrackerDisplay extends Component {
                   this.toggleEdit()
               }}>
                 <img 
+                className='check-but'
                 src={squareSave} alt="check mark" height="30" />
               </button>
 
               <button 
               className='cancel-buttons-style'
               onClick={this.toggleEdit}>
-              <img src={cancel} alt='cancel' height='40'/>
+              <img 
+              className='x-but'
+              src={cancel} alt='cancel' height='40'/>
               </button>
             </div>
           </div>

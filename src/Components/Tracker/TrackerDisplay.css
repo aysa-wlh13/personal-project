@@ -150,25 +150,48 @@
 /* phone */
 @media(max-width: 375px) {
     .tracks{
-        width: 95vw;
-        height: 8vh;
+        width: 97vw;
+        height: 9vh;
     }
     
     .hold-box {
-        height: 7.5vh;
+        height: 9vh;
         width: 15vw;
-        font-size: 12px;
+        font-size: 11px;
+        font-weight: 700;
+    }
+
+    .but-hold-box{
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        height: 9vh;
+        width: 7vw;
+    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
     }
     
-    .but-hold-box{
+    .trash-but{
+        height: 27px;
+    }
+
+    .pencil-but{
+        height: 20px;
+    }
+
+    /* .but-hold-box{
         height: 7.5vh;
         width: 10vw;
-    }
+    } */
     
     .edit-tracks{
         border: 2px solid rgb(0, 0, 0);
         margin-top: 35px;
-        width: 94vw;
+        width: 97vw;
         height: 10vh;
 
         font-size: 15.5px;
@@ -178,7 +201,7 @@
         box-sizing: border-box;
         border: 1px solid rgb(0, 0, 0);
         height: 10vh;
-        width: 13.2vw;
+        width: 15vw;
     
         display: flex;
         flex-direction: column;
@@ -188,19 +211,7 @@
         align-content: center;
     }
 
-    .but-hold-box{
-        box-sizing: border-box;
-        border: 1px solid red;
-        height: 10vh;
-        width: 15vw;
-    
-        display: flex;
-        flex-direction: row;
-        flex-wrap: nowrap;
-        justify-content: space-around;
-        align-items: center;
-        align-content: space-around;
-    }
+
 
     .edit-input {
 		border: 1.5px solid rgb(77, 77, 77);
@@ -209,11 +220,13 @@
         margin-left: 7px;
     }
 
-    .trash-but{
-        height: 32px;
+    .check-but{
+        height: 20px;
     }
 
-    .pencil-but{
-        height: 24.5px;
+    .x-but{
+        height: 27px;
+
     }
+
 }
