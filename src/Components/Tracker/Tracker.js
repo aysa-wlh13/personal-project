@@ -81,6 +81,7 @@ class Tracker extends Component {
         <div className='add-hold-box'>
           <h3>blood sugar:</h3>
           <input
+            className='add-input'
             onChange={e => this.handleInput("blood_sugar", e.target.value)}
           />
         </div>
@@ -88,18 +89,22 @@ class Tracker extends Component {
         <div className='add-hold-box'>
           <h3>food:</h3>
           <input
+          className='add-input'
             onChange={e => this.handleInput("food_name", e.target.value)}
           />
         </div>
 
         <div className='add-hold-box'>
           <h3>carbs:</h3>
-          <input onChange={e => this.handleInput("carbs", e.target.value)} />
+          <input 
+          className='add-input'
+          onChange={e => this.handleInput("carbs", e.target.value)} />
           </div>
 
           <div className='add-hold-box'>
           <h3>insulin units:</h3>
           <input
+          className='add-input'
             onChange={e => this.handleInput("insulin_units", e.target.value)}
           />
           </div>
@@ -107,19 +112,25 @@ class Tracker extends Component {
 
         <div className='add-hold-box'>
           <h3>time:</h3>
-          <input onChange={e => this.handleInput("time", e.target.value)} />
+          <input
+          className='add-input' 
+          onChange={e => this.handleInput("time", e.target.value)} />
           </div>
 
           <div className='add-hold-box'>
           <h3>date:</h3>
-          <input onChange={e => this.handleInput("date", e.target.value)} />
+          <input 
+          className='add-input'
+          onChange={e => this.handleInput("date", e.target.value)} />
         </div>
 
           <div className='add-but-hold-box'>
           <button 
           className='add-but'
           onClick={this.addTracker}>
-            <img src={add} alt="add" height="40" />
+            <img 
+            className='plus-but'
+            src={add} alt="add" height="40" />
           </button>
           </div>
         </section>

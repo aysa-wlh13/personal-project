@@ -83,3 +83,137 @@
 	align-content: space-around;
 }
 
+/* iPad */
+@media(max-width: 768px){
+    .tracks{
+        width: 94vw;
+        height: 7.3vh;
+    }
+    
+    .hold-box {
+        height: 7.5vh;
+        width: 15vw;
+    
+    }
+    
+    .but-hold-box{
+        height: 7.5vh;
+        width: 13.5vw;
+    }
+    
+    .edit-tracks{
+        border: 2px solid rgb(0, 0, 0);
+        margin-top: 35px;
+        width: 94vw;
+        height: 10vh;
+
+        font-size: 15.5px;
+    }
+
+    .edit-hold-box{
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        height: 10vh;
+        width: 13.2vw;
+    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: center;
+    }
+
+    .but-hold-box{
+        box-sizing: border-box;
+        border: 1px solid white;
+        height: 10vh;
+        width: 15vw;
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+        font-size: 12px;
+    }
+
+    .edit-input {
+		border: 1.5px solid rgb(77, 77, 77);
+        width: 11vw;
+        margin-left: 7px;
+    }
+
+}
+
+/* phone */
+@media(max-width: 375px) {
+    .tracks{
+        width: 95vw;
+        height: 8vh;
+    }
+    
+    .hold-box {
+        height: 7.5vh;
+        width: 15vw;
+        font-size: 12px;
+    }
+    
+    .but-hold-box{
+        height: 7.5vh;
+        width: 10vw;
+    }
+    
+    .edit-tracks{
+        border: 2px solid rgb(0, 0, 0);
+        margin-top: 35px;
+        width: 94vw;
+        height: 10vh;
+
+        font-size: 15.5px;
+    }
+
+    .edit-hold-box{
+        box-sizing: border-box;
+        border: 1px solid rgb(0, 0, 0);
+        height: 10vh;
+        width: 13.2vw;
+    
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: center;
+    }
+
+    .but-hold-box{
+        box-sizing: border-box;
+        border: 1px solid red;
+        height: 10vh;
+        width: 15vw;
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+    }
+
+    .edit-input {
+		border: 1.5px solid rgb(77, 77, 77);
+
+        width: 11vw;
+        margin-left: 7px;
+    }
+
+    .trash-but{
+        height: 32px;
+    }
+
+    .pencil-but{
+        height: 24.5px;
+    }
+}

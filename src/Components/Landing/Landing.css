@@ -91,3 +91,212 @@
     background-color: transparent;
     border: none;
 }
+
+
+/* iPad */
+@media(max-width: 768px){
+    .behind-login{
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        
+        background-image: url('https://addisonmagazine.com/wp-content/uploads/2019/10/iStock-1173495247.jpg');
+    
+        /* background-size: 90vw 200vh;  */
+       
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    
+    
+    
+    .login-container{
+        height: 38vh;
+        background-color: rgba(0, 0, 0, 0.116);
+        width: 50vw;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    .small-login-box{
+        height: 27.5vh;
+        width: 37vw;
+        border: 3px solid black;
+        font-size: 23px;
+        font-weight: 600;
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: center;
+    }
+
+    .login-word{
+        /* border: 1px solid blue; */
+        height: 7vh;
+        width: auto;
+    }
+
+    
+    .username-input {
+        /* border: 1px solid blue; */
+        height: 7vh;
+        width: auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 23px;
+
+        
+    }
+    
+    .password-input {
+        height:7vh;
+        width: auto;
+        /* border: 1px solid purple; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 23px;
+    
+    }
+    
+    .login-register{
+        height: 5vh;
+        width: auto;
+        /* border: 1px solid red; */
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: stretch;
+        
+    }
+    
+    .login-register-button{
+        height: 7vh;
+        font-size: 25px;
+        font-weight: 600;
+        background-color: transparent;
+        border: none;
+    }
+}
+
+
+
+
+
+/* phone */
+@media(max-width: 375px) {
+    .behind-login{
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+        
+        background-image: url('https://addisonmagazine.com/wp-content/uploads/2019/10/iStock-1173495247.jpg');
+    
+        /* background-size: 90vw 200vh;  */
+       
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    
+    
+    
+    .login-container{
+        height: 38vh;
+        background-color: rgba(0, 0, 0, 0.116);
+        width: 80vw;
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+    
+    .small-login-box{
+        height: 27.5vh;
+        width: 64vw;
+        border: 3px solid rgb(0, 0, 0);
+        font-size: 23px;
+        font-weight: 600;
+        
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+        align-items: stretch;
+        align-content: center;
+    }
+
+    .login-word{
+        /* border: 1px solid blue; */
+        height: 7vh;
+        width: auto;
+    }
+
+    
+    .username-input {
+        /* border: 1px solid blue; */
+        height: 7vh;
+        width: auto;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 23px;
+
+        
+    }
+    
+    .password-input {
+        height:7vh;
+        width: auto;
+        /* border: 1px solid purple; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 23px;
+    
+    }
+    
+    .login-register{
+        height: 5vh;
+        width: auto;
+        /* border: 1px solid red; */
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: stretch;
+        
+    }
+    
+    .login-register-button{
+        height: 7vh;
+        font-size: 25px;
+        font-weight: 600;
+        background-color: transparent;
+        border: none;
+    }
+}

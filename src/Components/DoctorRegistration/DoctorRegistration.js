@@ -50,7 +50,7 @@ class DoctorRegistration extends Component {
             <div className='doctor-registration-behind'>
                 <section className='doctor-registration-container'>
                     <article className='doctor-registration-small-container'>
-                    DoctorRegistration
+                    Doctor Registration
                     <div className='dr-username-input'>
                         <p>Username:</p>    
                         <input 

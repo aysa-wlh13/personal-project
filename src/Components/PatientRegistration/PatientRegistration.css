@@ -27,6 +27,8 @@
 	align-items: center;
 }
 
+
+
 .patient-registration-small-container{
     height: 45vh;
 	border: 3px solid black;
@@ -89,3 +91,193 @@
     border: none;
 }
 
+/* iPad */
+@media(max-width: 768px){
+	.patient-registration-behind {
+		height: 100vh;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		align-content: stretch;
+		
+		background-image: url('https://addisonmagazine.com/wp-content/uploads/2019/10/iStock-1173495247.jpg');
+	
+		/* background-size: 90vw 200vh;  */
+	   
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+	}
+	
+	.patient-registration-container{
+		height: 50vh;
+		width: 54vw;
+		/* border: 1px solid black; */
+		background-color: rgba(0, 0, 0, 0.116);
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	
+	
+	.patient-registration-small-container{
+		height: 40vh;
+		width: 40vw;
+		border: 3px solid black;
+		font-size: 21px;
+		font-weight: 600;
+	
+	}
+	
+	.patient-username-input {
+		/* border: 1px solid red; */
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.patient-password-input {
+	
+		/* border: 1px solid blue; */
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.first-name-input {
+		/* border: 1px solid green; */
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.last-name-input {
+		/* border: 1px solid orangered; */
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.doctor-input{
+		/* border: 1px solid purple; */
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.register-button-container{
+		width: 39.6vw;
+		
+		/* border: 1px solid goldenrod; */
+	}
+	.registerButtons{
+		font-size: 20px;
+		font-weight: 600;
+		background-color: transparent;
+		border: none;
+	}
+
+}
+
+/* phone */
+@media(max-width: 375px) {
+	.patient-registration-behind {
+		height: 100vh;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: center;
+		align-items: center;
+		align-content: stretch;
+		
+		background-image: url('https://addisonmagazine.com/wp-content/uploads/2019/10/iStock-1173495247.jpg');
+	
+		/* background-size: 90vw 200vh;  */
+	   
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-size: 100% 100%;
+	}
+	
+	.patient-registration-container{
+		height: 75vh;
+		width: 80vw;
+		/* border: 1px solid black; */
+		background-color: rgba(0, 0, 0, 0.116);
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.patient-registration-small-container{
+		height: 65vh;
+		width: 65vw;
+		border: 3px solid black;
+		font-size: 21px;
+		font-weight: 600;
+	
+	}
+	
+	.patient-username-input {
+		/* border: 1px solid red; */
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.patient-password-input {
+	
+		/* border: 1px solid blue; */
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.first-name-input {
+		/* border: 1px solid green; */
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.last-name-input {
+		/* border: 1px solid orangered; */
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.doctor-input{
+		/* border: 1px solid purple; */
+	
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	
+	.register-button-container{
+		width: 65vw;
+		
+		/* border: 1px solid goldenrod; */
+	}
+	.registerButtons{
+		font-size: 20px;
+		font-weight: 600;
+		background-color: transparent;
+		border: none;
+	}
+}

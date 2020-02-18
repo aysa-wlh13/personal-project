@@ -67,3 +67,152 @@
     width: 20vw;
     /* border: 1px solid goldenrod; */
 }
+
+
+/* iPad */
+@media(max-width: 768px){
+    .doctor-registration-behind {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+    
+        background-image: url('https://addisonmagazine.com/wp-content/uploads/2019/10/iStock-1173495247.jpg');
+    
+        /* background-size: 90vw 200vh;  */
+       
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    
+    .doctor-registration-container{
+		height: 48vh;
+		width: 54vw;
+        /* border: 1px solid black; */
+        background-color: rgba(0, 0, 0, 0.116);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .doctor-registration-small-container{
+		height: 35vh;
+        width: 40vw;        
+        border: 3px solid black;
+        font-size: 22.3px;
+        font-weight: 600;
+    }
+    
+    .dr-username-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+    
+    .dr-password-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid blue; */
+    }
+    
+    .dr-firstName-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid magenta; */
+    }
+    
+    .dr-lastName-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid darkblue; */
+    }
+    
+    .dr-register-button-container{
+        height: 100px;
+        width: 39.7vw;
+        /* border: 1px solid goldenrod; */
+    }
+}
+
+/* phone */
+@media(max-width: 375px) {
+    .doctor-registration-behind {
+        height: 100vh;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: center;
+        align-items: center;
+        align-content: stretch;
+    
+        background-image: url('https://addisonmagazine.com/wp-content/uploads/2019/10/iStock-1173495247.jpg');
+    
+        /* background-size: 90vw 200vh;  */
+       
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+    }
+    
+    .doctor-registration-container{
+		height: 66vh;
+		width: 85vw;
+        /* border: 1px solid black; */
+        background-color: rgba(0, 0, 0, 0.116);
+    
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .doctor-registration-small-container{
+		height: 55vh;
+        width: 69vw;        
+        border: 3px solid black;
+        font-size: 22.3px;
+        font-weight: 600;
+    }
+    
+    .dr-username-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid red; */
+    }
+    
+    .dr-password-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid blue; */
+    }
+    
+    .dr-firstName-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid magenta; */
+    }
+    
+    .dr-lastName-input {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* border: 1px solid darkblue; */
+    }
+    
+    .dr-register-button-container{
+        height: 100px;
+        width: 69vw;
+        /* border: 1px solid goldenrod; */
+    }
+}

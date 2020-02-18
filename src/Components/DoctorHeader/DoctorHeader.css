@@ -1,5 +1,5 @@
 .doctor-top {
-    height: 8vh;
+    height: 7vh;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.979);
     position: fixed;
@@ -26,4 +26,66 @@
     color: rgb(255, 255, 255);
 
     margin-right: 40px;
+}
+
+/* iPad */
+@media(max-width: 768px){
+    .doctor-top {
+        height: 7.5vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.979);
+        position: fixed;
+        top: 0px;
+        z-index: 5;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+    }
+    
+    .doctor-move-buttons-style {
+        font-size: 20px;
+        font-weight: 600;
+        background-color: transparent;
+        border: none;
+        color: rgb(255, 255, 255);
+        margin-right: 40px;
+    }
+}
+
+/* phone */
+@media(max-width: 375px) {
+    .doctor-top {
+        height: 12vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.979);
+        position: fixed;
+        top: 0px;
+        z-index: 5;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+    }
+    
+    .logo {
+        margin-left: 5px;
+        height: 40px;
+        width: 35vw;
+        /* border: 2px solid chartreuse; */
+    }
+    
+    .doctor-move-buttons-style {
+        font-size: 15px;
+        font-weight: 600;
+        background-color: transparent;
+        border: none;
+        color: rgb(255, 255, 255);
+    
+        margin-right: 40px;
+    }
 }

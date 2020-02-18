@@ -40,3 +40,49 @@
     border: none;
     color: rgb(255, 255, 255);
 }
+
+/* phone */
+@media(max-width: 375px) {
+    .top {
+        height: 8vh;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.979);
+        position: fixed;
+        top: 0px;
+        z-index: 5;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+    }
+    
+    .logo {
+        margin-left: 30px;
+        /* border: 2px solid chartreuse; */
+    }
+    
+    .move-buttons{
+        height: 50px;
+        width: 30vw;
+        /* border: 2px solid rgb(228, 18, 88); */
+        margin-right: 30px;
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: stretch;
+        
+    }
+    
+    .move-buttons-style {
+        font-size: 15px;
+        font-weight: 600;
+        background-color: transparent;
+        border: none;
+        color: rgb(255, 255, 255);
+    }
+}

@@ -50,3 +50,88 @@
     border: none;
     color: black;
 }
+
+/* iPad */
+@media(max-width: 768px){
+    .patent-back{
+        /* height: 100vh; */
+        margin-top: 90px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+    }
+    
+    
+    .name-track-box{
+        width: 30vw;
+        margin-top: 15px;
+        border: 2px solid black;
+        font-size: 18px;
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+        box-sizing: border-box;
+    
+    }
+    
+
+    
+    .track{
+        border: 2px solid green;
+        font-size: 23.5px;
+        font-weight: 600;
+        background-color: transparent;
+        border: none;
+        color: black;
+    }
+}
+
+
+/* phone */
+@media(max-width: 375px) {
+    .patent-back{
+        /* height: 100vh; */
+        margin-top: 90px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+    }
+    
+    
+    .name-track-box{
+        width: 65vw;
+        margin-top: 15px;
+        border: 2px solid black;
+        font-size: 18px;
+    
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-around;
+        align-items: center;
+        align-content: space-around;
+        box-sizing: border-box;
+    
+    }
+    
+
+    
+    .track{
+        border: 2px solid green;
+        font-size: 23.5px;
+        font-weight: 600;
+        background-color: transparent;
+        border: none;
+        color: black;
+    }
+}

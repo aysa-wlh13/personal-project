@@ -55,8 +55,8 @@ class Landing extends Component {
 
                 <div className='login-container'>
                     <article className='small-login-box'>
-                        <h1>Login</h1>
-                        <section                                className='input-container'>
+                        <h1 className='login-word'>Login</h1>
+                                                      
                         <div className='username-input'>
                             <style>
                                 @import url('https://fonts.googleapis.com/css?family=PT+Serif&display=swap');
@@ -88,7 +88,6 @@ class Landing extends Component {
                             onChange={(e) => this.handleInput(e)}/>
                     </div>        
             
-                        </section>
 
                         <article className='login-register'>
                         <style>

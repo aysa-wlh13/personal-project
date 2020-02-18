@@ -6,6 +6,7 @@ import "./TrackerDisplay.css";
 
 
 import squareSave from "./squareSave.jpg";
+import cancel from './cancel.png';
 
 
 class TrackerDisplay extends Component {
@@ -78,13 +79,20 @@ class TrackerDisplay extends Component {
             <button 
             className='add-but'
             onClick={this.toggleEdit}>
-              <img src={edit2} alt="edit" height="38" />
+              <img 
+                className='pencil-but'
+
+              src={edit2} alt="edit" height="38" />
             </button>
 
             <button 
-            className='add-but'
+              className='add-but'
+
             onClick={() => this.deleteTracker(this.props.el.track_id)}>
-              <img src={trashcan2} alt="trashcan" height="48" />
+              <img 
+                className='trash-but'
+
+              src={trashcan2} alt="trashcan" height="48" />
             </button>
             </div>
           </div>
@@ -95,6 +103,7 @@ class TrackerDisplay extends Component {
               <div className='edit-hold-box'>
               <h3>blood sugar:</h3>
               <input
+                className='edit-input'
                 onChange={e => this.handleInput("blood_sugar", e.target.value)}
               />
               </div>
@@ -102,30 +111,38 @@ class TrackerDisplay extends Component {
             <div className='edit-hold-box'>
               <h3>food:</h3>
               <input
+                className='edit-input'
                 onChange={e => this.handleInput("food_name", e.target.value)}
               />
               </div>
 
             <div className='edit-hold-box'>
               <h3>carbs:</h3>
-              <input onChange={e => this.handleInput("carbs", e.target.value)} />
+              <input 
+                className='edit-input'
+              onChange={e => this.handleInput("carbs", e.target.value)} />
               </div>
 
             <div className='edit-hold-box'>
               <h3>insulin units:</h3>
               <input
+                className='edit-input'
                 onChange={e => this.handleInput("insulin_units", e.target.value)}
               />
               </div>
 
             <div className='edit-hold-box'>
               <h3>time:</h3>
-              <input onChange={e => this.handleInput("time", e.target.value)} />
+              <input 
+              className='edit-input'
+              onChange={e => this.handleInput("time", e.target.value)} />
               </div>
 
             <div className='edit-hold-box'>
               <h3>date:</h3>
-              <input onChange={e => this.handleInput("date", e.target.value)} />
+              <input 
+              className='edit-input'
+              onChange={e => this.handleInput("date", e.target.value)} />
               </div>
 
             <div className='but-hold-box'>
@@ -136,12 +153,14 @@ class TrackerDisplay extends Component {
                   this.toggleEdit()
               }}>
                 <img 
-                
-                src={squareSave} alt="check mark" height="40" />
+                src={squareSave} alt="check mark" height="30" />
               </button>
+
               <button 
               className='cancel-buttons-style'
-              onClick={this.toggleEdit}>cancel</button>
+              onClick={this.toggleEdit}>
+              <img src={cancel} alt='cancel' height='40'/>
+              </button>
             </div>
           </div>
           </div>
