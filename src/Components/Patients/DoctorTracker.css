@@ -36,3 +36,49 @@
 	align-content: space-around;
 }
 
+
+/* phone */
+@media(max-width: 375px){
+	.doctor-tracks{
+		border: 2px solid rgb(0, 0, 0);
+		margin-top: 87px;
+		width: 98.5vw;
+		height: 11vh;
+	
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: center;
+		align-content: stretch;
+		box-sizing: border-box;
+	}
+
+	.doctor-track-box{
+		box-sizing: border-box;
+		border: 1px solid rgb(0, 0, 0);
+		height: 11vh;
+		width: 17vw;
+	
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: center;
+		align-content: space-around;
+
+		font-size: 12px;
+
+	}
+	
+	.doctor-track-behind{
+		display: flex;
+		flex-direction: column;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+		align-items: center;
+		align-content: space-around;
+	}
+	
+
+}

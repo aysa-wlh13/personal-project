@@ -83,6 +83,9 @@
         background-image: url('https://addisonmagazine.com/wp-content/uploads/2019/10/iStock-1173495247.jpg');
     
         /* background-size: 90vw 200vh;  */
+
+        filter: brightness(123%);
+
        
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -157,10 +160,18 @@
         background-image: url('https://addisonmagazine.com/wp-content/uploads/2019/10/iStock-1173495247.jpg');
     
         /* background-size: 90vw 200vh;  */
+
+        filter: brightness(123%);
+
        
-        background-repeat: no-repeat;
+        /* background-repeat: no-repeat;
         background-attachment: fixed;
-        background-size: 100% 100%;
+        background-size: 100% 100%; */
+
+        background-size: cover;
+        background-position: center, center; 
+
+        background-size: 150% 100%;
     }
     
     .doctor-registration-container{
