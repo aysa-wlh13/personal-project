@@ -1,13 +1,23 @@
 require('dotenv').config();
+
 const express = require('express');
+
 const session = require('express-session');
+
 const massive = require('massive');
+
 const authCtrl = require('./controllers/authController');
+
 const trackCtrl = require('./controllers/trackController');
+
 const pCtrl = require('./controllers/patientController');
+
 //sockets
 const socket = require("socket.io");
 const sockCtrl = require('./controllers/SocketsController');
+
+//stripe
+const stCtrl = require('./controllers/stripeController')
 
 const {SERVER_PORT, CONNECTION_STRING, SESSION_SECRET}=process.env;
 
@@ -83,7 +93,7 @@ app.get('/api/getChat/:users_id',sockCtrl.getChat)
 
 
 //////////////////////////////////////////////////////
-//Sockets
-
+//Stripe
+app.post('/api/payment',stCtrl.pay);
     
 

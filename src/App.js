@@ -8,10 +8,9 @@ import './App.css';
 function App() {
   return (
     <Provider store={store}>
-      <HashRouter>
+        <HashRouter>
         <div className="App">
-          
-          {routes}
+        {routes}
         </div>
       </HashRouter>
     </Provider>

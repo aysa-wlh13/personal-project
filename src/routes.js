@@ -7,9 +7,11 @@ import Tracker from './Components/Tracker/Tracker';
 import ChatRoom from './Components/ChatRoom/ChatRoom';
 import Patients from './Components/Patients/Patients';
 import DoctorTracker from './Components/Patients/DoctorTracker';
+import Stripe from './Components/Stripe/Stripe';
 
 export default (
     <Switch>
+        <Route path='/stripe' component={Stripe}/>
         <Route path='/login' component={Landing}/>
         <Route path='/doctor-registration' component={DoctorRegistration}/>
         <Route path='/patient-registration' component={PatientRegistration}/>
@@ -17,5 +19,6 @@ export default (
         <Route path='/dashboard/ChatRoom' component={ChatRoom}/>
         <Route path='/patients/:users_id' component={DoctorTracker}/>
         <Route path='/patients' component={Patients}/>
+
     </Switch>
 )

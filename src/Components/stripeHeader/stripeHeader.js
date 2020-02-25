@@ -1,9 +1,9 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom'
-import './Header.css'
+import './stripeHeader.css'
 import newLogoSmall from './newLogoSmall.png'
 
-class Header extends Component {
+class stripeHeader extends Component {
 
     render(){
         return(
@@ -16,19 +16,11 @@ class Header extends Component {
 
             <article className='move-buttons'>
 
-            <Link to='/stripe'>
+            <Link to='/dashboard/tracker'>
                 <button className='move-buttons-style'>
-                        Donate
+                        Tracker
                 </button>
-            </Link> 
-
-                {/* <Link to='/dashboard/ChatRoom'>
-                    <button className='move-buttons-style'>
-                        Chat Room
-                    </button>
-                </Link> */}
-
-                {/* <button className='move-buttons-style'>Find your food</button> */}
+            </Link>
 
                 <Link to='/login'>
                     <button className='move-buttons-style'>
@@ -41,4 +33,4 @@ class Header extends Component {
     }
 }
 
-export default Header;
+export default stripeHeader;
