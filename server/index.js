@@ -31,6 +31,9 @@ app.use( express.static( `${__dirname}/../build` ) );
 massive(CONNECTION_STRING).then(db => {
     app.set('db', db)
     console.log('db connected')
+
+            app.listen(port, () => console.log(`${port} is Haunted!`))
+        
 })
 
 app.use(session({
@@ -45,9 +48,6 @@ app.use(session({
 //////////////////////////////////////////////////
 
 const port = SERVER_PORT;
-const io = socket(
-    app.listen(port, () => console.log(`${port} is Haunted!`))
-);
 
 //////////////////////////////////////////////////////
 //Endpoints

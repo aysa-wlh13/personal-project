@@ -3,7 +3,7 @@ import {Link} from 'react-router-dom'
 import './stripeHeader.css'
 import newLogoSmall from './newLogoSmall.png'
 
-class stripeHeader extends Component {
+class StripeHeader extends Component {
 
     render(){
         return(
@@ -33,4 +33,4 @@ class stripeHeader extends Component {
     }
 }
 
-export default stripeHeader;
+export default StripeHeader;
